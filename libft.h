@@ -6,7 +6,7 @@
 /*   By: tbergkul <tbergkul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/16 10:57:16 by tbergkul          #+#    #+#             */
-/*   Updated: 2019/10/24 15:28:28 by tbergkul         ###   ########.fr       */
+/*   Updated: 2019/10/28 19:08:39 by tbergkul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,16 @@ typedef struct		s_list
 	size_t			content_size;
 	struct s_list	*next;
 }					t_list;
+
+int					ft_count_words(char *s, char c);
+
+int					ft_char_is_upper(char c);
+
+int					ft_char_is_lower(char c);
+
+void				ft_lstprint_content(t_list *lst);
+
+void				ft_lstprint(t_list *lst);
 
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 
