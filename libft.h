@@ -6,7 +6,7 @@
 /*   By: tbergkul <tbergkul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/16 10:57:16 by tbergkul          #+#    #+#             */
-/*   Updated: 2019/10/28 19:08:39 by tbergkul         ###   ########.fr       */
+/*   Updated: 2019/10/30 14:05:05 by tbergkul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,13 +48,13 @@ t_list				*ft_lstnew(void const *content, size_t content_size);
 
 void				ft_putchar(char c);
 
-void				ft_putstr(char *str);
+void				ft_putstr(char const *s);
 
 int					ft_strcmp(const char *s1, const char *s2);
 
-void				ft_putnbr(int nb);
+void				ft_putnbr(int n);
 
-char				*ft_strcpy(char *dest, const char *src);
+char				*ft_strcpy(char *dst, const char *src);
 
 size_t				ft_strlen(const char *s);
 
@@ -66,7 +66,7 @@ char				*ft_strstr(const char *haystack, const char *needle);
 
 char				*ft_strnstr(const char *str, const char *find, size_t len);
 
-int					ft_atoi(char *str);
+int					ft_atoi(const char *str);
 
 int					ft_isalpha(int c);
 

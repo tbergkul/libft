@@ -3,20 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tbergkul <tbergkul@student.hive.fi>        +#+  +:+       +#+        */
+/*   By: tbergkul <tbergkul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/16 11:19:25 by tbergkul          #+#    #+#             */
-/*   Updated: 2019/10/16 13:34:18 by tbergkul         ###   ########.fr       */
+/*   Updated: 2019/10/30 13:58:01 by tbergkul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr(int nb)
+void	ft_putnbr(int n)
 {
 	long	i;
 
-	i = nb;
+	i = n;
 	if (i < 0)
 	{
 		ft_putchar('-');

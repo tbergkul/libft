@@ -6,7 +6,7 @@
 /*   By: tbergkul <tbergkul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/22 12:40:21 by tbergkul          #+#    #+#             */
-/*   Updated: 2019/10/28 19:07:59 by tbergkul         ###   ########.fr       */
+/*   Updated: 2019/10/29 15:06:50 by tbergkul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ static int	ft_words(const char *s, char c)
 	return (words);
 }
 
-static int	ft_letters(const char *s, char c)
+static int	ft_wl(const char *s, char c)
 {
 	int	letters;
 	int	y;
@@ -67,7 +67,7 @@ char		**ft_strsplit(char const *s, char c)
 		while (s[i] && s[i] != c)
 		{
 			k = 0;
-			if (!(new[j] = (char *)malloc(sizeof(char) * ft_letters(s, c) + 1)))
+			if (!(new[j] = (char *)malloc(sizeof(char) * ft_wl(s + i, c) + 1)))
 				return (NULL);
 			while (s[i] && s[i] != c)
 				new[j][k++] = s[i++];
